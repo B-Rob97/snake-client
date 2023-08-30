@@ -13,10 +13,14 @@ const connect = function() {
     console.log("Message from Snek Server:", data);
   });
 
+  conn.on("connect", () => {
+    console.log("You have been connected to Snek Multiplayer. Have fun!");
+    conn.write("Name: BR");
+  });
+
+  
+
   return conn;
 };
 
-module.exports =
-{
-  connect
-};
+module.exports = { connect };

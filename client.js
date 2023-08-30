@@ -1,4 +1,5 @@
 const net = require("net");
+const { setupInput } = require("./play");
 
 const connect = function() {
   const conn = net.createConnection({

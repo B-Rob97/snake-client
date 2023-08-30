@@ -15,10 +15,11 @@ const connect = function() {
 
   conn.on("connect", () => {
     console.log("You have been connected to Snek Multiplayer. Have fun!");
-    conn.write("Name: BR");
+    conn.write("Name: Brett");
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 50);
   });
-
-  
 
   return conn;
 };
